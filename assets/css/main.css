@@ -79,10 +79,38 @@ html {
   right: 0.2em;
   z-index: 0;
 }
-/* @media (min-width: 568px) {
-} */
-
-@media (max-width: 568px) {
+@media (max-width: 992px) {
+  #line {
+    width: 12em;
+  }
+  #leaves {
+    width: 12em;
+    height: auto;
+    margin-top: 2em;
+  }
+  .services img {
+    width: 68%;
+    border-radius: 2em;
+  }
+  #pinkrose {
+    margin-top: 0em;
+    z-index: -1;
+  }
+  #eachrow {
+    margin-top: 2em;
+  }
+  #eachcol {
+    margin: 1em;
+  }
+  #subrow {
+  }
+  #subcol {
+    margin-top: 1em;
+  }
+  #subcol {
+  }
+}
+@media (max-width: 768px) {
   #line {
     width: 12em;
   }
@@ -100,17 +128,72 @@ html {
     z-index: -1;
   }
   #eachrow {
-    margin: 3em;
+    margin-top: 2em;
   }
   #eachcol {
-    margin: 3em;
+    margin: 1em;
   }
   #subrow {
   }
   #subcol {
-    margin-top: 2em;
+    margin-top: 1em;
   }
-  #subcol p {
-    font-size: 10px;
+  #subcol {
+  }
+}
+@media (max-width: 575px) {
+  .services img {
+    width: 35%;
+    border-radius: 2.5em;
+  }
+  #eachrow {
+    margin-top: 2.5em;
+  }
+  #eachcol {
+    margin: 1.5em;
+  }
+  #subrow {
+  }
+  #subcol {
+    margin-top: 1.5em;
+  }
+  #subcol {
+  }
+}
+@media (max-width: 320px) {
+  .services img {
+    width: 25%;
+    border-radius: 2.5em;
+  }
+  #eachrow {
+    margin-top: 2.5em;
+  }
+  #eachcol {
+    margin: 1.5em;
+  }
+  #subrow {
+  }
+  #subcol {
+    margin-top: 1.5em;
+  }
+  #subcol {
+  }
+}
+@media (max-width: 286px) {
+  .services img {
+    width: 0%;
+    border-radius: 2.5em;
+  }
+  #eachrow {
+    margin-top: 2.5em;
+  }
+  #eachcol {
+    margin: 1.5em;
+  }
+  #subrow {
+  }
+  #subcol {
+    margin-top: 1em;
+    margin-bottom: 0em;
   }
 }
