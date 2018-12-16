@@ -1,0 +1,113 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  /* font-family: "lato", sans-serif; */
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  background-color: #fff;
+  /* font-family: "Merienda", cursive; */
+}
+
+/* remove any margin from Container-fluid */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#eachrow {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#eachcol {
+  /* sh */
+}
+#subrow {
+  height: 18em;
+}
+#subcol {
+}
+
+.scroll-arrow {
+  color: rgb(15, 59, 88);
+  opacity: 0;
+  right: 1%;
+  bottom: 0%;
+  padding: 1em;
+  position: fixed;
+  z-index: 1000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.shadow {
+  filter: drop-shadow(5px 10px 10px rgb(175, 40, 40));
+}
+
+.services img {
+  width: 90%;
+  border-radius: 2em;
+}
+#leaves {
+  width: 10em;
+  position: absolute;
+  left: 2em;
+  z-index: 100;
+}
+.pinkrose {
+  width: 10em;
+  height: auto;
+  position: absolute;
+  margin-top: 2em;
+  right: 0.2em;
+  z-index: 0;
+}
+/* @media (min-width: 568px) {
+} */
+
+@media (max-width: 568px) {
+  .my-5 img {
+    width: 5em;
+  }
+  #leaves {
+    width: 12em;
+    height: auto;
+    margin-top: 2em;
+  }
+  .services img {
+    width: 60%;
+    border-radius: 2em;
+  }
+  #pinkrose {
+    margin-top: 0em;
+    z-index: -1;
+  }
+  #eachrow {
+  }
+  #eachcol {
+    margin: 3em;
+  }
+  #subrow {
+    left: 10px;
+  }
+  #subcol {
+    margin-top: 2em;
+  }
+  #subcol p {
+    font-size: 10px;
+  }
+}
