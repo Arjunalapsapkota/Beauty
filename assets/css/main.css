@@ -16,6 +16,9 @@ html {
   padding-left: 0;
   padding-right: 0;
 }
+#maplocation {
+  height: 25em;
+}
 #eachrow {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -61,8 +64,12 @@ html {
   width: 25em;
   height: auto;
 }
+.maplocation {
+  width: 90px;
+  height: 90px;
+}
 .services img {
-  width: 90%;
+  width: 75%;
   border-radius: 2em;
 }
 #leaves {
