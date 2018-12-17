@@ -10,15 +10,33 @@ html {
   background-color: #fff;
   /* font-family: "Merienda", cursive; */
 }
-
+i {
+  color: #007bff;
+}
+.head-add {
+  color: red;
+  font-size: 1.2em;
+}
 /* remove any margin from Container-fluid */
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
+/* ############################################*/
 #maplocation {
   height: 25em;
+  opacity: 0.9;
+  /* position: absolute; */
 }
+#filter {
+  height: 20em;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(184, 165, 58);
+  z-index: 100;
+  opacity: 0.2;
+}
+/* ############################################*/
 #eachrow {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -64,10 +82,7 @@ html {
   width: 25em;
   height: auto;
 }
-.maplocation {
-  width: 90px;
-  height: 90px;
-}
+/* ############################################*/
 .services img {
   width: 75%;
   border-radius: 2em;
@@ -86,6 +101,7 @@ html {
   right: 0.2em;
   z-index: 0;
 }
+/* ############################################*/
 @media (max-width: 992px) {
   #line {
     width: 12em;

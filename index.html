@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/animate.css" />
     <script src="assets/javascript/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     
 </head>
 <body>
@@ -321,12 +322,67 @@
 </div>
 <!-- *******************************************************-->
 <div class="container">
+
 <section class="location">
 <h2 class="text-center"> Location</h2>
 <p class="text-center"> You can find us on different locations</p>
+<div class="container text-center">
+    <div class="row m-4">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                  
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            
+            <span class="head-add"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>San Francisco</span><br>
+            4792 Mission St<br>
+            San Francisco, California<br>
+            Mon – Sat: 10:00 am – 6:00 pm<br>
+            Sun: CLOSED<br>
+            (415) 815-8400<br>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <span class="head-add"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Oakland</span><br>
+            3301 International Blvd,<br>
+            Oakland,CA 94601<br>
+            Mon – Sat: 10:00 am – 6:00 pm<br>
+            Sun: 11:00am – 5:00pm<br>
+            (510) 910-3189<br>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                  
+        </div>
+    </div>
+    <div class="row m-2">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                      
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <span class="head-add"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>San Francisco</span><br>
+            Brows and Beauty Bar<br>
+            3196 24th St, San Francisco, CA 94110<br>
+            Mon - Sun: 10:00 am - 7:00 pm<br>
+            (415) 969-0004<br>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <span class="head-add"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>San Pablo</span><br>
+            14401 San Pablo Ave,#B,<br>
+            San Pablo,CA94806<br>
+            Mon - Sat: 11:00 am - 6:00 pm<br>
+            Sun: 11:00am - 5:00pm<br>
+            (510) 730-9970<br>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                      
+        </div>
+    </div>
+</div>
+<!-- <div id="filter">
+    
+</div> -->
 <div id="maplocation">
 
 </div> 
+
 </section>
 
 </div>
@@ -347,14 +403,17 @@ Follow us on Social Media
 
 <!-- Navar fixed with these links -->
 <script>
-    var mymap = L.map('maplocation').setView([ 37.87206709066595,-122.27125257253647], 16);
+    var mymap = L.map('maplocation').setView([ 37.885261,-122.324097], 10);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYXJqdW5hbGFwc2Fwa290YSIsImEiOiJjampkdDlwYnkxNjV1M3dxa2cxdDZ5OXgwIn0.XkQ9e9ccEuhN0FV1pC6q3Q', {
     attribution: '',
-    maxZoom: 12,
+    maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoiYXJqdW5hbGFwc2Fwa290YSIsImEiOiJjampkdDlwYnkxNjV1M3dxa2cxdDZ5OXgwIn0.XkQ9e9ccEuhN0FV1pC6q3Q'
     }).addTo(mymap);
-    L.marker([37.87206709066595,-122.27125257253647]).addTo(mymap);
+    L.marker([37.966228,-122.344805]).addTo(mymap);
+    L.marker([37.772492,-122.418865]).addTo(mymap);
+    L.marker([37.776709,-122.224543]).addTo(mymap);
+    L.marker([37.752467,-122.416086]).addTo(mymap);
 
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
