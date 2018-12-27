@@ -69,6 +69,7 @@ app.post("/contact", function(req, res) {
         rejectUnauthorized: false
       }
     });
+    //
     // verify connection configuration
     smtpTrans.verify(function(error, success) {
       if (error) {
