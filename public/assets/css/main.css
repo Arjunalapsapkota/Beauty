@@ -2,10 +2,10 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   /* font-family: "lato", sans-serif; */
   font-weight: 400;
-  line-height: 1.8em;
+  line-height: 1.6em;
   color: #666;
   background-color: #fff;
   /* font-family: "Merienda", cursive; */
@@ -13,6 +13,7 @@ html {
 i {
   color: #007bff;
 }
+
 .head-add {
   color: red;
   font-size: 1.2em;
@@ -21,6 +22,33 @@ i {
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
+}
+/* ############################################*/
+.about p {
+  font-size: 1.25em;
+  padding: 1em;
+  font-family: "Merienda";
+  line-height: 1.8em;
+}
+#subcol span {
+  font-size: 1.1em;
+}
+
+blockquote {
+  padding: 1.5em 6em 0 6em;
+  font-family: "Courgette", cursive;
+  font-size: 1.2em;
+}
+.section-heading,
+#subcol span {
+  font-family: "Merienda";
+}
+#contact p {
+  font-family: "Merienda";
+}
+#contact p {
+  font-family: "Courgette", cursive;
+  font-size: 1.2em;
 }
 /* ############################################*/
 #maplocation {
@@ -49,6 +77,9 @@ i {
 }
 #subcol {
 }
+#bottom i {
+  padding: 0.4em;
+}
 
 .scroll-arrow {
   color: rgb(15, 59, 88);
@@ -60,6 +91,11 @@ i {
   z-index: 1000;
 }
 
+#bottom {
+  margin-top: 1em;
+  background: #f3e2db;
+  padding: 3em 3em;
+}
 .facebook {
   background: #3b5998;
   color: white;
@@ -69,7 +105,10 @@ i {
   background: #55acee;
   color: white;
 }
-
+#maplocation {
+  width: 20em;
+  height: 20em;
+}
 .linkedin {
   background: #007bb5;
   color: white;
@@ -83,9 +122,28 @@ i {
   height: auto;
 }
 /* ############################################*/
-.services img {
-  width: 75%;
+.services .row img {
+  width: 70%;
   border-radius: 2em;
+}
+#deals {
+  margin-top: 5em;
+}
+#location {
+  margin-top: 3em;
+}
+.test-line {
+  width: 30em;
+  height: auto;
+  margin-bottom: 1em;
+}
+.gold-line {
+  width: 15em;
+  height: auto;
+}
+.service-line {
+  width: 15em;
+  height: auto;
 }
 #leaves {
   width: 10em;
@@ -218,5 +276,40 @@ i {
   #subcol {
     margin-top: 1em;
     margin-bottom: 0em;
+  }
+}
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
   }
 }
