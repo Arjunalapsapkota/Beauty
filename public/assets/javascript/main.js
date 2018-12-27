@@ -16,10 +16,10 @@ $(document).ready(function() {
   //   console.log(res.reviews[0]);
   // });
 
-  $.get("/reviews", res => {
-    console.log(res.reviews[0].text);
-    // $("#text").append(res.reviews[0].text);
-  });
+  // $.get("/reviews", res => {
+  //   console.log(res.reviews[0].text);
+  //   // $("#text").append(res.reviews[0].text);
+  // });
   $("#submit_button").click(event => {
     event.preventDefault();
     // fill the form first - All fields Required
